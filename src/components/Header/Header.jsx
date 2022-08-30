@@ -1,103 +1,47 @@
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon } from '@fortawesome/free-regular-svg-icons'
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
-const HeaderStyled = styled.div`
-  position: fixed;
-  z-index: 99;
-  width: 100%;
+const HeaderStyle = styled.div`
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: #1c233d;
-  h1 {
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 32px;
-    color: #e5e5e5;
-  }
-  li {
-    display: inline-block;
-    padding: 20px;
-  }
-  .nav-link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    /* identical to box height */
-
-    color: #e5e5e5;
-  }
-
-  @media (min-width: 992px) {
-    height: 80px;
-  }
-  .connect-btn {
-    margin-left: 12px;
-    height: 50px;
-    background: blue;
-    border-radius: 5px;
-    border: none;
-    color: white;
-  }
+  height: 75px;
+  padding: 0 80px;
+  border-bottom: 1px solid #000;
 `;
 
-const HeaderRightStyled = styled.div`
+const HeadingStyle = styled.h1`
+  font-weight: 800;
+`;
+
+const Theme = styled.div `
   display: flex;
   align-items: center;
-  margin-left: auto;
-  .header-lg {
-    display: none;
+  flex-direction: row;
+  gap: 11px;
+
+  &:hover{
+    cursor: pointer;
   }
 
-  .header-small {
-    display: flex;
+  && span {
+    font-weight: 600;
   }
 
-  @media (min-width: 992px) {
-    .header-lg {
-      display: flex;
-      align-items: center;
-    }
-    .header-small {
-      display: none;
-    }
-  }
 `;
 
 
-// eslint-disable-next-line arrow-body-style
 const Header = () => {
-  
   return (
-    <HeaderStyled>
-      <h1>Devestore</h1>
-      <ul>
-        <li>
-          <Link to="/" className="nav-link">
-            Explore
-          </Link>
-        </li>
-        <li>
-          <Link to="/about" className="nav-link">
-            Marketplace
-          </Link>
-        </li>
-        <li>
-          <Link to="/view-product" className="nav-link">
-            Artist
-          </Link>
-        </li>
-        <li>
-          <Link to="/collection" className="nav-link">
-            Collection
-          </Link>
-        </li>
-      </ul>
-      <div className="header-search">
-        <input type="text" placeholder="Search" className="input-search" />
-        <i className="fa-solid fa-magnifying-glass"></i>
-      </div>
-    </HeaderStyled>
+    <HeaderStyle>
+      <HeadingStyle>Where in the world?</HeadingStyle>
+      <Theme>
+        <FontAwesomeIcon icon={ faMoon } />
+        <span>Dark Mode</span>
+      </Theme>
+    </HeaderStyle>
   );
 };
 
