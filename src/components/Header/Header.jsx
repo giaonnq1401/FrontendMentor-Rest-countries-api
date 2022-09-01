@@ -9,7 +9,7 @@ const HeaderStyle = styled.div`
   align-items: center;
   height: 75px;
   padding: 0 80px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--light-mode-input);
 `;
 
 const HeadingStyle = styled.h1`

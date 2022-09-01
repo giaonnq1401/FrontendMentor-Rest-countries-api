@@ -88,12 +88,12 @@ const Dashboard = () => {
       <Content>
         {countriesList.map((country) => {
           return(
-            <Card to={"/"}
-              flag={country.flags.svg}
-              country={country.name.common}
-              population={country.population}
-              region={country.region}
-              capital={country.capital}
+            <Card to={`/detail/${country.cioc}`}
+              flag={country?.flags?.svg}
+              country={country?.name?.common}
+              population={country?.population}
+              region={country?.region}
+              capital={country?.capital}
             />
           )
         })}

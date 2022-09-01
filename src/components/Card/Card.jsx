@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -9,6 +10,10 @@ const Container = styled.div`
     &:hover {
         cursor: pointer;
         transform: translate(0, -10px);
+    }
+
+    & a {
+        text-decoration: none;
     }
 `;
 
@@ -46,25 +51,27 @@ const Description = styled.div`
 `
 const Card = ({ to, flag, country, population, region, capital }) => {
     return (
-        <Container to={to}>
-            <Flag
+        <Container>
+            <NavLink to={to}>
+                <Flag
                 src= {flag}
                 alt=""/>
-            <Content>
-                <Country>{country}</Country>
-                <Description>
-                    <h3>Population:</h3>
-                    <span>{population}</span>
-                </Description>
-                <Description>
-                    <h3>Region:</h3>
-                    <span>{region}</span>
-                </Description>
-                <Description>
-                    <h3>Capital:</h3>
-                    <span>{capital}</span>
-                </Description>
-            </Content>
+                <Content>
+                    <Country>{country}</Country>
+                    <Description>
+                        <h3>Population:</h3>
+                        <span>{population}</span>
+                    </Description>
+                    <Description>
+                        <h3>Region:</h3>
+                        <span>{region}</span>
+                    </Description>
+                    <Description>
+                        <h3>Capital:</h3>
+                        <span>{capital}</span>
+                    </Description>
+                </Content>
+            </NavLink>
         </Container>
     );
 }
