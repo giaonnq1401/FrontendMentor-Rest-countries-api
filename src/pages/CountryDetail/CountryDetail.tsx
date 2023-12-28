@@ -1,5 +1,9 @@
 function CountryDetail() {
-  return <>Detail</>;
+  return (
+    <div>
+      <button type="button">Back</button>
+    </div>
+  );
 }
 
 export default CountryDetail;
