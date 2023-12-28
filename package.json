@@ -26,7 +26,8 @@
   "prettier": "@lcbase/prettier-config",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1"
   },
   "devDependencies": {
     "@lcbase/eslint-config-reactts": "^2.0.2",
