@@ -4,6 +4,7 @@ import './header.scss';
 
 function Header() {
   const handleChangeMode = () => {
+    // TODO: handle change theme mode
     console.log('changed');
   };
 
