@@ -1,0 +1,54 @@
+@mixin spread-map($map: ()) {
+  @each $key, $value in $map {
+    #{$key}: $value;
+  }
+}
+
+@mixin devices($breakpoint) {
+  @if $breakpoint == small {
+    @media only screen and (min-width: 576px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == medium {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == x-large {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xx-large {
+    @media only screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+}
+
+@mixin typo($type) {
+  @each $_type, $typoMap in $typo {
+    @if $type == $_type {
+      @each $prop, $value in $typoMap {
+        #{$prop}: $value;
+      }
+    }
+  }
+}
+
+@mixin truncate {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
