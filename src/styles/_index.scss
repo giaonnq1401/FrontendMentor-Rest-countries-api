@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+
+:host {
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+}

@@ -1,0 +1,47 @@
+// Colors
+$--dark-element: #2b3945;
+$--dark-bg: #202c37;
+$--light-text: #111517;
+$--light-input: #858585;
+$--light-bg: #fafafa;
+$--white: #ffffff;
+
+//Typography
+$typo: (
+  body-b: (
+    font-size: 16px,
+    font-weight: 800,
+    line-height: 150%,
+    letter-spacing: -0.48px,
+  ),
+  body-m: (
+    font-size: 16px,
+    font-weight: 600,
+    line-height: 150%,
+    letter-spacing: -0.48px,
+  ),
+  body-r: (
+    font-size: 16px,
+    font-weight: 300,
+    line-height: 150%,
+    letter-spacing: -0.48px,
+  ),
+  body-sb: (
+    font-size: 14px,
+    font-weight: 800,
+    line-height: 180%,
+    letter-spacing: -0.42px,
+  ),
+  body-sm: (
+    font-size: 14px,
+    font-weight: 600,
+    line-height: 180%,
+    letter-spacing: -0.42px,
+  ),
+  body-sr: (
+    font-size: 14px,
+    font-weight: 300,
+    line-height: 180%,
+    letter-spacing: -0.42px,
+  ),
+);

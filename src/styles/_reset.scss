@@ -1,0 +1,166 @@
+// * {
+//   // Reset For Webcomponent
+//   // azimuth: initial;
+//   // border-collapse: initial;
+//   // border-spacing: initial;
+//   // caption-side: initial;
+//   // color: initial;
+//   // cursor: initial;
+//   // direction: initial;
+//   // empty-cells: initial;
+//   // font-family: initial;
+//   // font-size: initial;
+//   // font-style: initial;
+//   // font-variant: initial;
+//   // font-weight: initial;
+//   // font: initial;
+//   // letter-spacing: initial;
+//   // line-height: initial;
+//   // list-style-image: initial;
+//   // list-style-position: initial;
+//   // list-style-type: initial;
+//   // list-style: initial;
+//   // orphans: initial;
+//   // quotes: initial;
+//   // text-align: initial;
+//   // text-indent: initial;
+//   // text-transform: initial;
+//   // visibility: initial;
+//   // white-space: initial;
+//   // widows: initial;
+//   // word-spacing: initial;
+
+//   // Reset Css
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+//   border: 0;
+//   font-size: 100%;
+//   font: inherit;
+//   vertical-align: baseline;
+// }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
