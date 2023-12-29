@@ -1,6 +1,6 @@
 function CountryDetail() {
   return (
-    <div>
+    <div className="content">
       <button type="button">Back</button>
     </div>
   );

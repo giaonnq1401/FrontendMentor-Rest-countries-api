@@ -1,3 +1,9 @@
+import SearchAndFilter from '@/components/SearchAndFilter';
+
 export default function Homepage() {
-  return <>Homepage</>;
+  return (
+    <div className="content">
+      <SearchAndFilter />
+    </div>
+  );
 }
