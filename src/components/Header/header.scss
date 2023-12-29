@@ -5,11 +5,13 @@
   padding: 0 24px;
   display: flex;
   align-items: center;
+  box-shadow: 0 4px 0 -2px rgb(0, 0, 0, 0.05);
+  margin-bottom: 32px;
 }
 
 .home {
-  font-size: 16px;
-  font-weight: 800;
+  @include typo(body-b);
+  color: $--dark-element;
   text-decoration: none;
 }
 
@@ -21,4 +23,10 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  @include typo(body-sm);
+  color: $--dark-element;
+
+  svg path {
+    fill: $--dark-element;
+  }
 }
