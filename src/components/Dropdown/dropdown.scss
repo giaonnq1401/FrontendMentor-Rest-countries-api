@@ -1,0 +1,20 @@
+@import '@/styles/styles.scss';
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  background-color: $--white;
+  @include typo(body-sm);
+  color: $--dark-element;
+  box-shadow: 0 5px 4px -2px $--box-shadow;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

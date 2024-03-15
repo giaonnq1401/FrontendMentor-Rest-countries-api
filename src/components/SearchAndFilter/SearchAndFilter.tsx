@@ -2,6 +2,8 @@ import { useMemo } from 'react';
 
 import IconSearch from '@/assets/icons/icon-search.svg';
 
+import Dropdown from '../Dropdown/Dropdown';
+
 import './search-filter.scss';
 
 type KeyRegion = 'africa' | 'america' | 'asia' | 'europe' | 'oceania' | 'filter';
@@ -9,10 +11,6 @@ type KeyRegion = 'africa' | 'america' | 'asia' | 'europe' | 'oceania' | 'filter'
 export default function SearchAndFilter() {
   const regions: Array<{ key: KeyRegion; label: string }> = useMemo(
     () => [
-      {
-        key: 'filter',
-        label: 'Filter by Region',
-      },
       {
         key: 'africa',
         label: 'Africa',
@@ -44,11 +42,7 @@ export default function SearchAndFilter() {
         <input type="text" placeholder="Search for a country..." />
       </div>
 
-      <select name="region" className="filter-bar">
-        {regions.map(region => (
-          <option value={region.key}>{region.label}</option>
-        ))}
-      </select>
+      <Dropdown menu={regions} title="Filter by Region" />
     </div>
   );
 }
